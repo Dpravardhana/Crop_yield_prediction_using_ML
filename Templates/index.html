@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Probability Prediction</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #dad2d2;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .navbar {
+      background-color: #333;
+      padding: 10px;
+    }
+    
+    .navbar h1 {
+      color: #fff;
+      margin: 0;
+      text-align: center;
+      font-size: 24px;
+    }
+    
+    .container {
+      max-width: 500px;
+      margin: 100px auto;
+      padding: 20px;
+      background: #e0e0e0;
+      border-radius: 25px;
+      box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+      height: 80%;
+    }
+    
+    .input-field {
+      margin-bottom: 20px;
+    }
+    
+    .input-field label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #333;
+    }
+    
+    .input-field input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      
+    }
+    
+    .button {
+      background: #055009;
+      color: #ffffff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+      display: block;
+      margin: 0 auto;
+      box-shadow: inset 20px 20px 60px #2e402d,
+            inset -20px -20px 60px #3e563d;
+    }
+    
+    .button:hover {
+      background-color: #cdf19d;
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <h1>Crop Yield Prediction</h1>
+  </div>
+  
+  <div class="container" style="height: 80%;">
+    <form action="/predict" method="POST">
+      <div class="input-field">
+        <label for="fertilizer">Fertilizer:</label>
+        <input type="text" id="fertilizer" name="fertilizer" placeholder="Enter the amount of fertilizer" required>
+      </div>
+      <div class="input-field">
+        <label for="water">Water:</label>
+        <input type="text" id="water" name="water" placeholder="Enter the amount of water" required>
+      </div>
+      <button class="button" type="submit">Predict Probability</button>
+    </form>
+  </div>
+</body>
+</html>
+  

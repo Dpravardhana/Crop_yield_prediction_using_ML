@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Probability Prediction</title>
+  <style>
+    body {
+      font-family: Georgia, Arial, Helvetica;
+      background-color: #dad2d2;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .navbar {
+      background-color: #333;
+      padding: 10px;
+    }
+    
+    .navbar h1 {
+      color: #fff;
+      margin: 0;
+      text-align: center;
+      font-size: 24px;
+    }
+    
+    .container {
+      max-width: 500px;
+      margin: 100px auto;
+      padding: 20px;
+      background: #e0e0e0;
+      border-radius: 50px;
+      box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+      height: 80%;
+    }
+    
+    .input-field {
+      margin-bottom: 20px;
+    }
+    
+    .input-field label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #333;
+    }
+    
+    .input-field input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    
+    .button {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+      display: block;
+      margin: 0 auto;
+    }
+    
+    .button:hover {
+      background-color: #45a049;
+    }
+    .prediction {
+        font-size: 36px;
+        font-weight: bold;
+        color: #006d77;
+        margin-top: 10px;
+    }
+
+    .highlight {
+        color: #5635eb;
+        font-weight: bold;
+    }
+    .container {
+      background: #e0e0e0;
+        border-radius: 25px;
+        padding: 40px;
+        box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+        text-align: center;
+    }
+    .h1{
+      font-family: Georgia, Arial, Helvetica;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <h1>Crop Yield Prediction</h1>
+  </div>
+  
+  <div class="container">
+    <h1>Result</h1>
+    <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;font-style: oblique;font-size: larger;">Predicted Crop Yield:</p>
+    <p class="prediction"><span class="highlight">{{ prediction }}</span></p>
+</div>
+
+</body>
+</html>
+  
